@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39; &#39;wasm-unsafe-eval&#39; blob:; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: blob:; media-src &#39;self&#39; blob:; font-src &#39;self&#39; data:; connect-src &#39;self&#39; blob: data:; worker-src &#39;self&#39; blob:; child-src &#39;self&#39; blob:; form-action &#39;none&#39;; base-uri &#39;none&#39;">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text Stats — words, reading time, readability — NavigatorsLab Tools</title>
+  <meta name="description" content="Word/character counts, reading time, readability scores and keyword density — computed entirely in your browser." />
+  <meta name="theme-color" content="#0b0f17" />
+  <meta property="og:title" content="Text Stats — words, reading time, readability — NavigatorsLab Tools" />
+  <meta property="og:description" content="Word counts, reading time, readability scores, keyword density. Nothing is uploaded." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://navigatorslab.com/tools/og-textstats.png" />
+  <meta property="og:url" content="https://navigatorslab.com/tools/textstats" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Text Stats — words, reading time, readability" />
+  <meta name="twitter:description" content="Word counts, reading time, readability scores, keyword density. Nothing is uploaded." />
+  <meta name="twitter:image" content="https://navigatorslab.com/tools/og-textstats.png" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  <script type="module" crossorigin src="./assets/textstats-BEN_T_0x.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="./assets/dom-CdRtKgMN.js">
+  <link rel="modulepreload" crossorigin href="./assets/agent-BXrVPJYt.js">
+  <link rel="stylesheet" crossorigin href="./assets/styles-DxO-VUmL.css"></head>
+<body>
+  <header class="nl-top">
+    <a class="brand" href="./index.html">🧭 NavigatorsLab <b>Tools</b></a>
+    <span class="spacer"></span>
+    <a class="plain" href="./index.html">← All tools</a>
+  </header>
+
+  <main class="wrap">
+    <h1>📊 Text Stats</h1>
+    <p class="sub">
+      Count words and characters, estimate reading time, score readability (Flesch), and see keyword
+      density — for essays, applications, and posts. Drafts stay on your device.
+    </p>
+
+    <div class="panel">
+      <label for="textInput">Your text (or drop a .txt / .md file)</label>
+      <textarea id="textInput" rows="12" placeholder="Paste or type here — stats update as you write…"></textarea>
+      <div id="dz" class="drop" style="margin-top:10px">
+        <b>Drop a .txt or .md file</b> <span class="meta">to fill the box</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="stats-grid" id="cards"></div>
+      <h2 style="margin:18px 0 8px; font-size:16px">Sentence rhythm <span class="meta" id="histCap"></span></h2>
+      <div id="hist" aria-label="Sentence length distribution"></div>
+      <h2 style="margin:26px 0 8px; font-size:16px">Top keywords</h2>
+      <div id="keywords" class="kw-row"></div>
+    </div>
+  </main>
+
+  <footer class="nl-foot">
+    <span>🔒 runs entirely in your browser — nothing is uploaded, stored, or logged</span>
+    <span>·</span>
+    <a href="https://github.com/Kayforkind/NavigatorsLab-Tools">GitHub</a>
+    <span>·</span>
+    <a href="./index.html">All tools</a>
+  </footer>
+</body>
+</html>
